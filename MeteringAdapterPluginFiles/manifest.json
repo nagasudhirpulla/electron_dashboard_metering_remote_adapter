@@ -1,0 +1,13 @@
+{
+    "entry": "ElectronDashboardMeteringDataRemoteAdapter.exe",
+    "name": "Metering",
+    "app_id": "MeteringDataRemoteAdapter",
+    "out_types": [
+        "timeseries"
+    ],
+    "single_meas": true,
+    "multi_meas": false,
+    "quality_option": true,
+    "is_meas_picker_present": true,
+    "is_adapter_config_ui_present": true
+}

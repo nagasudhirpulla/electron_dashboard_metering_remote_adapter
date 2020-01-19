@@ -1,0 +1,7 @@
+{
+  "configFilename": "meterAdapterConfig.json",
+  "DataHost": "hostname",
+  "IdentityServerHost": "hostname",
+  "ClientId": "clientid",
+  "ClientPassword": "clientpass"
+}

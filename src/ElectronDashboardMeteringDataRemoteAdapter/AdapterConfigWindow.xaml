@@ -1,0 +1,38 @@
+﻿<Window x:Class="ElectronDashboardMeteringDataRemoteAdapter.AdapterConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElectronDashboardMeteringDataRemoteAdapter"
+        mc:Ignorable="d"
+        Title="Metering Archive Data Adapter Settings" Height="450" Width="500">
+    <ScrollViewer Margin="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto" MinWidth="150"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="Metering Archive Data Fetch Configuration" Grid.Row="0" Grid.ColumnSpan="2"></Label>
+            <Label Content="Data Host address" Grid.Row="1"></Label>
+            <Label Content="Identity Server Host Address Name" Grid.Row="2"></Label>
+            <Label Content="Client ID" Grid.Row="3"></Label>
+            <Label Content="Client Password" Grid.Row="4"></Label>
+            <TextBox Text="{Binding DataHost}" Grid.Column="1" Grid.Row="1"/>
+            <TextBox Text="{Binding IdentityServerHost}" Grid.Column="1" Grid.Row="2"/>
+            <TextBox Text="{Binding ClientId}" Grid.Column="1" Grid.Row="3"/>
+            <TextBox Text="{Binding ClientPassword}" Grid.Column="1" Grid.Row="4"/>
+            <StackPanel Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Margin="15" Padding="8" Content="Cancel" Click="Cancel_Click"/>
+                <Button Margin="15" Padding="8" Content="Save" Click="Save_Click"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>
